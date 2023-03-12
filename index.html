@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="loginForm">
+            <h1>Login</h1>
+            <label for="loginEmail"></label>
+            <input type="email" name="loginEmail" id="loginEmail" placeholder="Enter email:" />
+            <br />
+            <label for="loginPassword"></label>
+            <input type="password" name="loginPassword" id="loginPassword" placeholder="Enter password:" />
+            <br />
+            <input type="submit" name="login" id="login" value="Login" />
+            <div class="line"></div>
+            <div class="btn">
+                <p class="dont"> Don't have an account?<br> <br> </p>
+                <p><a href="#" id="wantToRegister">Sign up </a></p>
+            </div>
+        </div>
+        
+        <div id="registerForm">
+            <h1>Register</h1>
+            <label for="registrationEmail"></label>
+            <input type="email" name="registerEmail" id="registerEmail" placeholder="Enter your email: " required />
+            <br />
+            <label for="confirmEmail"></label>
+            <input type="email" name="confirmEmail" id="confirmEmail" placeholder="Re-enter your email:" required />
+            <br />
+            <label for="registerPassword"></label>
+            <input type="text" name="registerPassword" id="registerPassword" placeholder="Enter your password: "
+                required />
+            <div id="regErrors"></div>
+            <br />
+            <input type="submit" name="register" id="register" value="Register" />
+            <div class="line"></div>
+            <div class="btn">
+                <p><a href="#" id="wantToLogin">Already have an account? Sign in</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
